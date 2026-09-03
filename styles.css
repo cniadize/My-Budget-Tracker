@@ -1,41 +1,139 @@
-/* Element selector */
+/* Basic page styling */
 body {
     font-family: Arial, sans-serif;
     margin: 40px;
     background-color: #f4f4f4;
 }
 
-/* Element selector */
+
+/* Main heading */
 h1 {
     text-align: center;
     color: darkgreen;
 }
 
-/* Class selector */
+
+/* Introduction paragraph */
 .intro {
     text-align: center;
     font-size: 18px;
 }
 
-/* ID selector */
-#add-expense {
+
+/* Add Expense section */
+.add-expense-section {
     background-color: white;
     padding: 20px;
     margin-top: 30px;
     border: 1px solid #ccc;
 }
 
-/* Class selector */
-.expenses {
-    background-color: #e8f5e9;
-    padding: 20px;
-    margin-top: 20px;
-    border: 1px solid #aaa;
+
+/* Direct child selector */
+.add-expense-section > h2 {
+    color: darkgreen;
 }
 
-/* Element selector */
-input {
+
+/* Form inputs */
+input,
+select {
     display: block;
     margin: 8px 0 15px;
     padding: 8px;
+    width: 300px;
+}
+
+
+/* Negation pseudo-class */
+input:not([type="date"]) {
+    border: 1px solid #aaa;
+}
+
+
+/* Focus selector */
+input:focus,
+select:focus {
+    outline: 2px solid darkgreen;
+}
+
+
+/* Button */
+button {
+    padding: 10px 20px;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Expenses section */
+.expenses-section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+/* Descendant selector */
+.expenses-section td {
+    text-align: left;
+}
+
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Table cells */
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 12px;
+}
+
+
+/* Colored header */
+thead {
+    background-color: darkgreen;
+    color: white;
+}
+
+
+/* Alternating rows */
+tr:nth-child(even) {
+    background-color: #e8f5e9;
+}
+
+
+/* Hover effect */
+tbody tr:hover {
+    background-color: #d0e8d0;
+}
+
+
+/* Details section */
+details {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+
+/* Summary */
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Video section */
+.video-section {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
 }
