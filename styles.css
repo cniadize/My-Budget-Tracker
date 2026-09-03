@@ -1,0 +1,41 @@
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background-color: #f4f4f4;
+}
+
+/* Element selector */
+h1 {
+    text-align: center;
+    color: darkgreen;
+}
+
+/* Class selector */
+.intro {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* ID selector */
+#add-expense {
+    background-color: white;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid #ccc;
+}
+
+/* Class selector */
+.expenses {
+    background-color: #e8f5e9;
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #aaa;
+}
+
+/* Element selector */
+input {
+    display: block;
+    margin: 8px 0 15px;
+    padding: 8px;
+}
