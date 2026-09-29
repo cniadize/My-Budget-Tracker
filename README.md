@@ -1,120 +1,127 @@
+
 # Personal Budget & Expense Tracker
 
-# Project Description
+## Project Description
 
-This project is a simple **Personal Budget & Expense Tracker** built using HTML and CSS. It allows users to enter expense information and view sample expenses in a structured table.
+The Personal Budget & Expense Tracker is a beginner-friendly
+web project built using HTML5 and CSS3. It demonstrates how
+to organize expense information and present it through a
+clean, consistent, and user-friendly interface.
 
-The project was developed by building on the Week 1 Budget Tracker project and adding forms, tables, multimedia, interactive elements, and advanced CSS selectors.
+This project builds on the work completed in Weeks 1 and 2.
+Week 3 focuses on visual design, typography, colors, table
+styling, form styling, and the CSS Box Model.
 
-# Project Files
+## Project Files
 
-# 1. index.html
+### 1. index.html
 
-The `index.html` file contains the structure and content of the Budget Tracker.
+The `index.html` file provides the structure and content
+of the application.
+
+It contains:
+
+- A page heading and budget tracker logo.
+- An Add Expense form.
+- Input fields for expense name, amount, and date.
+- A category dropdown with Food, Transport, Rent,
+  Entertainment, and Other.
+- An Add Expense button.
+- An expense table with Name, Amount, Category, and Date.
+- Five sample expense records.
+- A collapsible How to Use section.
+- An embedded YouTube budgeting video.
+- A footer identifying the project and week.
+
+### 2. style.css
+
+The `style.css` file controls the appearance and layout
+of the application.
 
 It includes:
 
-* A main heading called **My Budget Tracker**
-* A logo image using the `<img>` element
-* An **Add Expense** form
-* Input fields for expense name, amount, and date
-* A category dropdown containing:
+- A consistent green, white, and light-gray color palette.
+- Google Fonts for headings and body text.
+- Card layouts for the heading, form, and expense table.
+- Styled input fields, dropdowns, and buttons.
+- Table borders, cell padding, and a colored header.
+- Alternating table row colors.
+- Table hover and form focus effects.
+- Rounded corners, margins, padding, and borders.
+- A responsive layout for smaller screens.
 
-  * Food
-  * Transport
-  * Rent
-  * Entertainment
-  * Other
-* An **Add Expense** button
-* An expense table containing Name, Amount, Category, and Date
-* Five sample expense records
-* A collapsible **How to use this tracker** section using `<details>` and `<summary>`
-* An embedded YouTube budgeting video using `<iframe>`
+### 3. README.md
 
-# 2. style.css
+This file documents the project, explains the purpose
+of each file, and describes the technologies and styling
+techniques used.
 
-The `style.css` file controls the appearance of the Budget Tracker.
+## Color Palette
 
-It includes:
+The project uses a consistent palette:
 
-* Page background and font styling
-* Heading and paragraph styling
-* Form and input styling
-* Button styling
-* Table borders and spacing
-* A colored table header
-* Alternating table row colors using `tr:nth-child(even)`
-* A hover effect on table rows
-* Focus effects for input fields
-* Styling for the details section
-* Styling for the embedded video
+- Primary green: #176B45
+- Dark green: #104B32
+- Light green: #E5F4EB
+- Background: #F3F7F4
+- White: #FFFFFF
 
-# Advanced CSS Selectors
+The colors provide a consistent appearance across headings,
+buttons, table headers, and interface cards.
 
-The project uses several advanced CSS selectors, including:
+## Typography
 
-# Descendant Selector
+Google Fonts are used to improve readability:
 
-.expenses-section td
+- Poppins is used for headings.
+- DM Sans is used for body text, labels, inputs, buttons,
+  and general content.
 
-This targets table data cells inside the expenses section.
+## CSS Box Model
 
-### Direct Child Selector
+The project uses:
 
-```css
-.add-expense-section > h2
-```
+- Margin to separate sections.
+- Padding to create space inside cards and table cells.
+- Borders to define sections and table cells.
+- Border radius to create rounded corners.
+- Box sizing to make element dimensions easier to manage.
 
-This targets the heading that is a direct child of the Add Expense section.
+## Advanced CSS Selectors
 
-### Position Pseudo-Class
+The stylesheet uses several advanced selectors:
 
-```css
-tr:nth-child(even)
-```
+- `.add-expense-section > h2` — direct child selector.
+- `.expenses-section td` — descendant selector.
+- `input:not([type="date"])` — negation pseudo-class.
+- `input:focus` and `select:focus` — focus pseudo-classes.
+- `tbody tr:nth-child(even)` — position pseudo-class.
 
-This gives alternating background colors to even table rows.
+## Technologies Used
 
-### Negation Pseudo-Class
+- HTML5
+- CSS3
+- Google Fonts
+- Visual Studio Code
+- Git and GitHub
 
-```css
-input:not([type="date"])
-```
+## Current Limitations
 
-This targets inputs except date inputs.
+The expense table contains hardcoded sample data.
+The Add Expense button is not functional yet because
+JavaScript has not been implemented.
 
-### Focus Pseudo-Class
+## Future Improvements
 
-```css
-input:focus,
-select:focus
-```
+Future versions can include JavaScript to add expenses
+dynamically, calculate totals, validate form entries,
+and store expense records.
 
-This changes the appearance of an input or dropdown when the user clicks or focuses on it.
+## How to Run
 
-## Multimedia
-
-The project includes:
-
-* An image logo using the `<img>` element.
-* A YouTube budgeting video embedded using an `<iframe>`.
-
-# Interactive Elements
-
-A `<details>` and `<summary>` element was added to create a collapsible section explaining how to use the tracker.
-
-The table also has a hover effect that changes the background color when the mouse moves over a row.
-
-The Add Expense button uses `cursor: pointer` to show that it can be clicked.
-
-# Future Improvements
-
-In future weeks, JavaScript can be added to make the Budget Tracker functional. The Add Expense button can then add new expenses to the table automatically, calculate totals, and allow users to manage their expenses.
-
-# Technologies Used
-
-* HTML5
-* CSS3
-* YouTube iframe
-* Visual Studio Code
-* GitHub
+1. Download or clone the repository.
+2. Open the project folder.
+3. Open `index.html` in a web browser.
+4. Ensure that `style.css` is in the same folder.
+5. Connect to the internet for Google Fonts and the
+   external logo and video to load.
