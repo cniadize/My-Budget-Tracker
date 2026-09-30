@@ -1,127 +1,105 @@
-
-# Personal Budget & Expense Tracker
+# SpendWise Dashboard Shell
 
 ## Project Description
 
-The Personal Budget & Expense Tracker is a beginner-friendly
-web project built using HTML5 and CSS3. It demonstrates how
-to organize expense information and present it through a
-clean, consistent, and user-friendly interface.
+SpendWise is a personal finance dashboard designed to help
+users view and understand their spending across different
+financial categories.
 
-This project builds on the work completed in Weeks 1 and 2.
-Week 3 focuses on visual design, typography, colors, table
-styling, form styling, and the CSS Box Model.
+This project is the foundation of the capstone project.
+Week 4 focuses on creating the visual dashboard structure
+using modern CSS layout techniques.
+
+The dashboard currently contains static information only.
+No JavaScript functionality has been added.
+
+---
 
 ## Project Files
 
-### 1. index.html
+### index.html
 
-The `index.html` file provides the structure and content
-of the application.
-
-It contains:
-
-- A page heading and budget tracker logo.
-- An Add Expense form.
-- Input fields for expense name, amount, and date.
-- A category dropdown with Food, Transport, Rent,
-  Entertainment, and Other.
-- An Add Expense button.
-- An expense table with Name, Amount, Category, and Date.
-- Five sample expense records.
-- A collapsible How to Use section.
-- An embedded YouTube budgeting video.
-- A footer identifying the project and week.
-
-### 2. style.css
-
-The `style.css` file controls the appearance and layout
-of the application.
+The `index.html` file contains the structure of the
+SpendWise Dashboard.
 
 It includes:
 
-- A consistent green, white, and light-gray color palette.
-- Google Fonts for headings and body text.
-- Card layouts for the heading, form, and expense table.
-- Styled input fields, dropdowns, and buttons.
-- Table borders, cell padding, and a colored header.
-- Alternating table row colors.
-- Table hover and form focus effects.
-- Rounded corners, margins, padding, and borders.
-- A responsive layout for smaller screens.
+- A sidebar navigation menu.
+- A dashboard header.
+- A welcome message.
+- User information.
+- Six financial category cards.
+- Food spending information.
+- Transport spending information.
+- Rent spending information.
+- Entertainment spending information.
+- Savings information.
+- Utilities information.
+- Summary cards for total expenses, savings, and budget.
+- A dashboard footer.
 
-### 3. README.md
+---
 
-This file documents the project, explains the purpose
-of each file, and describes the technologies and styling
-techniques used.
+### style.css
 
-## Color Palette
+The `style.css` file controls the complete visual
+appearance and layout of the dashboard.
 
-The project uses a consistent palette:
+It includes:
 
-- Primary green: #176B45
-- Dark green: #104B32
-- Light green: #E5F4EB
-- Background: #F3F7F4
-- White: #FFFFFF
+- CSS Grid for the main dashboard layout.
+- CSS Grid for the category cards.
+- Flexbox for the sidebar navigation.
+- Flexbox for the dashboard header.
+- Flexbox for the content inside each dashboard card.
+- CSS custom properties for the application theme.
+- Responsive design.
+- Card hover effects.
+- Keyboard focus effects.
+- Dark theme support.
 
-The colors provide a consistent appearance across headings,
-buttons, table headers, and interface cards.
+---
 
-## Typography
+## CSS Grid
 
-Google Fonts are used to improve readability:
+CSS Grid is used to create the overall dashboard structure.
 
-- Poppins is used for headings.
-- DM Sans is used for body text, labels, inputs, buttons,
-  and general content.
+The main layout contains:
 
-## CSS Box Model
+- A sidebar.
+- A main content area.
 
-The project uses:
+CSS Grid is also used to arrange the six financial
+category cards into three columns on larger screens.
 
-- Margin to separate sections.
-- Padding to create space inside cards and table cells.
-- Borders to define sections and table cells.
-- Border radius to create rounded corners.
-- Box sizing to make element dimensions easier to manage.
+---
 
-## Advanced CSS Selectors
+## Flexbox
 
-The stylesheet uses several advanced selectors:
+Flexbox is used for:
 
-- `.add-expense-section > h2` — direct child selector.
-- `.expenses-section td` — descendant selector.
-- `input:not([type="date"])` — negation pseudo-class.
-- `input:focus` and `select:focus` — focus pseudo-classes.
-- `tbody tr:nth-child(even)` — position pseudo-class.
+- Sidebar navigation.
+- Dashboard header.
+- User information.
+- Card content.
+- Card icons.
+- Responsive navigation.
 
-## Technologies Used
+This makes the dashboard flexible and easier to organize.
 
-- HTML5
-- CSS3
-- Google Fonts
-- Visual Studio Code
-- Git and GitHub
+---
 
-## Current Limitations
+## CSS Custom Properties
 
-The expense table contains hardcoded sample data.
-The Add Expense button is not functional yet because
-JavaScript has not been implemented.
+The project uses CSS variables inside the `:root`
+selector.
 
-## Future Improvements
+Examples include:
 
-Future versions can include JavaScript to add expenses
-dynamically, calculate totals, validate form entries,
-and store expense records.
-
-## How to Run
-
-1. Download or clone the repository.
-2. Open the project folder.
-3. Open `index.html` in a web browser.
-4. Ensure that `style.css` is in the same folder.
-5. Connect to the internet for Google Fonts and the
-   external logo and video to load.
+```css
+--brand-color
+--accent-color
+--background-color
+--surface-color
+--primary-text
+--secondary-text
